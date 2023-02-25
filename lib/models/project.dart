@@ -6,8 +6,11 @@ class Project {
   final int receiveAmount; // จำนวนเงินที่ได้รับบริจาคมาแล้ว
   final int donateCount; // จำนวนครั้งที่บริจาคเข้ามา
   final String imageUrl;
+  final String imagePP;
+  final int id;
 
   Project({
+    required this.id,
     required this.title,
     required this.description,
     required this.targetAmount,
@@ -15,5 +18,8 @@ class Project {
     required this.receiveAmount,
     required this.donateCount,
     required this.imageUrl,
+    required this.imagePP,
   });
+
+
 }
